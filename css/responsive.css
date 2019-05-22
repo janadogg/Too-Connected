@@ -1,0 +1,230 @@
+
+div.one-third {
+	width: 47.5%;
+}
+
+div.one-third-second {
+	margin: 0;
+}
+
+div.one-third-last {
+	clear: both;
+	float: none;
+	width: auto;
+	padding: 20px 0 0 0;
+}
+
+.mySlidesFooter {
+    width: 95%;
+    margin: 65px auto;
+}
+
+.reader-img {
+    height: 350px;
+}
+
+.text-container {
+	padding: 0px;
+}
+
+p {
+	font-size: 75%;
+}
+
+.video-container {
+	margin: 20px;
+}
+
+/*---- ABOUT PAGE -------*/
+
+	h1 {
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+
+  	h3 {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	.profile-img {
+		height: 200px;
+		width: 140px;
+		margin: 0px 15px 0px 0px;
+		float: left;
+	}
+
+	.Container {
+		padding: 30px;
+	}
+
+	.goal-container {
+		padding: 0px;
+	}
+
+	.textbox {
+		padding: 70px;
+		width: 55%;
+	}
+
+@media screen and (max-width: 700px) {
+
+	div.mobile-collapse {
+		width: 350px;
+		float: none;
+		margin: auto;
+	}
+
+	.mySlidesFooter {
+		width: 90%; 
+	}
+
+	.video-container {
+		margin: 20px;
+	}
+
+	.h1, h2 {
+    font-size: 2.5rem;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	.left-p {
+		padding: 0px;
+	}
+
+/*---- ABOUT PAGE -------*/
+	.logo-container{
+		height: 140px;
+	}
+
+	img.logo {
+		width: 200px;
+		height: 160px;
+	}
+
+	a {
+	font-size: 12px;
+	}
+
+	.Container {
+		width: 80%;
+		height: 440px;
+		padding: 30px;
+	}
+
+	h2.jobTitle {
+		font-size: 14px;
+	}
+
+	.column {
+		width: 26.33%;
+	}
+
+	.col-sm-8 {
+		width: 80%;
+		margin: 0px;
+		height: 550px;
+	}
+
+	.textbox {
+		width: 100%;
+		padding:0px;
+	}
+
+}
+
+
+@media screen and (max-width: 620px) {
+
+	.logo-container{
+		height: 140px;
+	}
+
+	img.logo {
+		width: 200px;
+		height: 160px;
+	}
+	
+	a{
+		font-size: 12px;
+	}
+
+	/*---- ABOUT PAGE -------*/
+	.Container {
+		height: 510px;
+		padding: 20px;
+	}
+
+	.profile-img {
+		float: none;
+	}
+
+	h1.myName {
+		margin: 0px;
+	}
+
+	.textbox-container {
+		margin:0px;
+	}
+
+	.col-sm-8 {
+		padding: 42px;
+	}
+
+
+@media screen and (max-width: 500px) {
+
+		
+	a{
+		font-size: 9px;
+	}
+
+    .hide-mobile {
+		display: none;
+	}
+		
+	.mySlidesFooter {
+		height: 610px; 
+		margin: 50px 0px -15px 45px;
+	}
+	
+	.reader-img {
+	float: none;
+	}
+	
+	.text-container {
+		margin: 0px;
+	}
+
+	.video-container {
+		margin: 20px;
+	}
+
+	/*---- ABOUT PAGE -------*/
+	.Container {
+		height: 545px;
+		padding: 20px;
+	}
+
+	h1.myName {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	 }
+
+	 .column {
+		width: 40.33%;
+	}
+
+	.col-sm-8 {
+		height: 685px;
+	}
+
+	ul.footer-ul {
+		padding: 0px;
+	}
+
+	}
+ }

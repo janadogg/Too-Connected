@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog that inspires how to find balanced social media behaviour</title>
+    <meta name="description" content="Too Connected focuses on new ways to find better social media behaviour. With her blogs
+    and Youtube channel, Kristjana tries to find the best way to balance social media with her everyday live in hope to bring more awareness to others."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Too-Connected/css/style.css">
+    <link rel="stylesheet" href="../Too-Connected/css/responsive.css" media="screen and (max-width: 900px)">
+    <link rel="functions" href="../Too-Connected/functions.js">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <Header>
+        <!---------Logo + Nav Bar--------------->
+        <div class="logo-container">
+            <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/index.html"> 
+                <img class="logo" width="300" height="300" src="img/thelogo.svg" alt="Letters saying Too Connected">
+            </a>
+        </div>
+        <nav>
+            <div class="nav-wrap">
+                <ul class="top-nav">
+                    <li>
+                        <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/blog.html">SoMe Blogs</a>
+                    </li>
+                    <li>
+                        <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/about.html">This Is Me</a>
+                    </li>
+                    <li>
+                        <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/contact.html">Let's Get Personal</a>
+                    </li>
+                    <li>
+                        <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/video.html">View The Blog's</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </Header>
+    <main>
+    <!-----------TOP SLIDE SHOW------------>
+    <div class="body-content"><div class="section-inner"><!-- body-content -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="img/slide-1.jpg" alt="images of a girl taking a photo with her phone, the image also contains text saying:Being more understanding, you open a new door for social media education. Let them teach you to learn more about how they view social media." style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides">
+                <img src="img/slide-2.jpg" alt="images of girl sitting on her computer, the image also contains text saying: What if they could grow from social media?
+                Hobbies can also be done online! By following the correct accounts, they could get inspired to try something new" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> 
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 6000); // Change image every 5 seconds
+            }
+        </script>
+
+            <!----------LATES ARTICLE SECTION ---------->
+            <h1 id="Main-Headlines">Lates articales</h1>
+                        
+            <div class="thirds clearfix">
+                <div class="one-third grow mobile-collapse">
+                    <img src="img/rodion-kutsaev-184298-unsplash.jpg" alt="A hand holding a phone" />
+                    <h2 id="Blog-Headline">How we can add more VALUE to our time on social media.​</h2>
+                </div>
+                <div class="one-third grow one-third-second mobile-collapse">
+                    <img src="img/blake-barlow-1439234-unsplash.jpg" alt="Two girls holding a phone and laughing" />
+                    <h2 id="Blog-Headline">Is social media just an addiction or a platform to grow from.​</h2>
+                </div>
+                <div class="one-third grow one-third-last mobile-collapse">
+                    <img src="img/jessica-lewis-512224-unsplash.jpg"alt="A table with a computer, notebook, pencil and a phone" />
+                    <h2 id="Blog-Headline">Tuesday Tasks will help you find better habits online!​</h2>
+                </div>
+            </div>
+            <!------------- POST SECTION (LEFT SIDE) + SIDEBAR (RIGHT SIDE)----------->      
+            <div class="two-columns clearfix">
+                <div class="main mobile-collapse">
+                    <h1 id="Main-Headlines">SoMe Blog's</h1>
+                    <div class="post-boxes">
+                        <img class="grow" src="img/elijah-o-donnell-680188-unsplash.jpg" alt="A girl posing infront of a another girl who is taking a photo of her">
+                        <h2 id="Blog-Headline">Post name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>  
+                    <div class="post-boxes">
+                        <img class="grow"  src="img/alexander-bracken-unsplash.jpg" alt="a boy talking a photo of a building">
+                        <h2 id="Blog-Headline">Post name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="post-boxes">
+                        <img class="grow"  src="img/thought-catalog-731868-unsplash.jpg" alt="a phone on a yellow background with the Snapchat logo on the screen">
+                        <h2 id="Blog-Headline">Post name</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+
+                <div class="side mobile-collapse">
+                    <div class="info-box-header-a">
+                        <h3 id="Blog-Headline">About Me</h3>
+                    </div>
+                    <div class="info-box-a">
+                        <img class="avatar" src="img/AVATARCIRCLE.png" alt="">
+                        <h4>Kristjana Dögg Jónsdóttir
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+
+                    <div class="info-box-header-b hide-mobile">
+                        <h3 id="Blog-Headline">Search Bar</h3>
+                    </div>
+                    
+                    <div class="info-box-b hide-mobile">
+                        <div class="container">
+                            <div class="row">
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="  search-query form-control" placeholder="Search" />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-danger" type="button">
+                                                <span class=" glyphicon glyphicon-search"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box-header-b hide-mobile">
+                        <h3 id="Blog-Headline">Facebook</h3>
+                    </div>
+
+                    <div class="info-box-b hide-mobile">
+                        <h4>Not Vital</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>  
+            </div>
+            <!--------REVIEW SECTION------------>
+            <div class="slide-show-container-footer hide-mobile">
+                <div class="mySlidesFooter">
+                    <img class="reader-img" src="img/photo-1522097564775-a638360455cf.jpeg" alt="a woman laughing">
+                    <div class="text-container">
+                        <h1 id=Headline>Our Rearder</h1>
+                        <h2 id="Blog-Headline">Selma Nielsen</h2>
+                        <p> Not long ago me and my husband were talking about how our kids take up the phones 
+                            in places where it can come of as very rude. We started looking at our own behaviour 
+                            and found out that we were no better at this. So after reading the blog about
+                            putting up house rules when it comes to our devices we soon saw changes in all 
+                            of our behaviours.
+                        </p> 
+                    </div>
+                </div>
+               
+                <div class="mySlidesFooter">
+                    <img class="reader-img" src="img/photo-1553267751-1c148a7280a1.jpeg" alt="a man smiling">
+                    <div class="text-container">
+                        <h1 id=Headline>Our Rearder</h1>
+                        <h2 id="Blog-Headline">Søren Jensen</h2>
+                        <p> Not long ago me and my husband were talking about how our kids take up the phones 
+                            in places where it can come of as very rude. We started looking at our own behaviour 
+                            and found out that we were no better at this. So after reading the blog about
+                            putting up house rules when it comes to our devices we soon saw changes in all 
+                            of our behaviours.
+                        </p> 
+                    </div>
+                </div>
+
+                <div class="mySlidesFooter">
+                    <img class="reader-img" src="img/photo-1513732822839-24f03a92f633.jpeg" alt="a woman smiling" >
+                    <div class="text-container">
+                        <h1 id=Headline>Our Rearder</h1>
+                        <h2 id="Blog-Headline">Nine Thomsen</h2>
+                        <p> Not long ago me and my husband were talking about how our kids take up the phones 
+                            in places where it can come of as very rude. We started looking at our own behaviour 
+                            and found out that we were no better at this. So after reading the blog about
+                            putting up house rules when it comes to our devices we soon saw changes in all 
+                            of our behaviours.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+    
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div> 
+
+            <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlidesFooter");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 10000); // Change image every 5 seconds
+                    }
+            </script>
+
+            <!-------- VIDEO SECTION ------------>
+            <h1 id="Main-Headlines">Video</h1>
+            <div class="video-container">
+                <iframe width="800" height="600"
+                src="https://www.youtube.com/embed/DpsvRrLwJhw">
+                </iframe>
+            </div>
+            <div class="latest-videos">
+                <div class="video-box">
+
+                </div>
+            </div>
+        </div></div><!--/body-content-->
+    </main>
+    <footer>
+    <!--------FOOTER NAV---------->
+        <nav>
+            <div class="nav-container">
+                <div class="nav-wrap-1">
+                    <ul class="footer-ul">
+                        <li>
+                            <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/About.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/Applications/MAMP/htdocs/wordpress/wp-content/themes/Too-Connected/video.html">Video</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--------SOCIAL MEDIA LINKS---------->
+        <div class="social-media-container">
+            <div class="social-media">
+                <div class="nav-wrap-2">
+                    <ul class="icon-ul">
+                        <li class="icon-li">
+                            <a class="icon-a" href=""><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="icon-li">
+                            <a class="icon-a"  href=""><i class="fab fa-youtube-square"></i></a>
+                        </li>
+                        <li class="icon-li">
+                            <a class="icon-a"  href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="icon-li">
+                            <a class="icon-a"  href=""><i class="fab fa-snapchat-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>
